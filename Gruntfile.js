@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         }
       },
       'java-release': {
-        command : 'git add src pom.xml && git commit -m "Generated source" && git push && mvn -B release:clean release:prepare release:perform',
+        command : 'git add pom.xml && git commit -m "Generated source" && git push && mvn -B release:clean release:prepare release:perform',
         options: {
           execOptions: {
             cwd: 'java-generated'
