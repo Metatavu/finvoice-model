@@ -8,10 +8,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     'shell': {
       'java-generate': {
-        command : 'xjc -p fi.metatavu.finvoice ./Finvoice2.01.xsd -d java-generated'
+        command : 'xjc -p fi.metatavu.finvoice ./Finvoice2.01.xsd -d java-generated/src/main/java'
       },
       'java-copy-pom': {
-        command: 'cp pom.xml java-generated/src/main/java'
+        command: 'cp pom.xml java-generated'
       },
       'java-install': {
         command : 'mvn install',

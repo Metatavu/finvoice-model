@@ -1,3 +1,4 @@
 nbproject
 /node_modules/
-java-generated
+java-generated/src
+java-generated/target
