@@ -29,6 +29,6 @@ module.exports = function(grunt) {
     }
   });
   
-  grunt.registerTask('default', ['shell:java-generate', 'shell:java-copy-pom', 'shell:java-install', 'shell:java-release' ]);
+  grunt.registerTask('default', ['shell:java-generate', 'shell:java-install', 'shell:java-release' ]);
   
 };
