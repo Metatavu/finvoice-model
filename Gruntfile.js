@@ -10,9 +10,6 @@ module.exports = function(grunt) {
       'java-generate': {
         command : 'xjc -p fi.metatavu.finvoice ./Finvoice2.01.xsd -d java-generated/src/main/java'
       },
-      'java-copy-pom': {
-        command: 'cp pom.xml java-generated'
-      },
       'java-install': {
         command : 'mvn install',
         options: {
