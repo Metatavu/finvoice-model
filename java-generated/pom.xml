@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>fi.metatavu.finvoice</groupId>
   <artifactId>finvoice-model</artifactId>
-  <version>0.0.5</version>
+  <version>0.0.6-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Finvoice Model</name>
   <description>Finoice model</description>
@@ -38,7 +38,7 @@
     <developerConnection>scm:git:git@github.com:Metatavu/finvoice-model.git</developerConnection>
     <url>git@github.com:Metatavu/finvoice-model.git</url>
     <connection>scm:git:git@github.com:Metatavu/finvoice-model.git</connection>
-    <tag>0.0.5</tag>
+    <tag>finvoice-model-0.0.1</tag>
   </scm>
 
   <organization>
