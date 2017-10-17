@@ -4,3 +4,4 @@ java-generated/src
 java-generated/target
 java-generated/pom.xml.releaseBackup
 java-generated/release.properties
+/target/
