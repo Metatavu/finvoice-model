@@ -8,7 +8,10 @@ module.exports = function(grunt) {
   grunt.initConfig({
     'shell': {
       'java-generate': {
-        command : 'xjc -p fi.metatavu.finvoice ./Finvoice2.01.xsd -d java-generated/src/main/java'
+        command : 'mvn -f generate-pom.xml clean generate-sources'
+      },
+      'java-copy': {
+        command : 'cp package-info.java java-generated/src/main/java/fi/metatavu/finvoice/package-info.java'
       },
       'java-install': {
         command : 'mvn install',
@@ -29,6 +32,7 @@ module.exports = function(grunt) {
     }
   });
   
-  grunt.registerTask('default', ['shell:java-generate', 'shell:java-install', 'shell:java-release' ]);
+  grunt.registerTask('java-generate', ['shell:java-generate', 'shell:java-copy', 'shell:java-install']);
+  grunt.registerTask('default', ['java-generate', 'shell:java-release' ]);
   
 };
